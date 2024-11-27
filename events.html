@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MITB ACM Student Chapter</title>
+  <link rel="icon" href="assets/logo.png" type="image/png">
+  <link rel="stylesheet" href="events-style.css">
+</head>
+<body>
+  <div class="header">
+    <img src="assets/logo.png" class="logo" alt="Logo">
+    <div class="audio-container">
+      <button class="audio-button" id="audio-button" onclick="showControls()" aria-label="Audio controls"></button>
+      <button class="control-button pause-button hidden" id="play-pause-button" onclick="togglePause()" aria-label="Pause audio"></button>
+      <button class="control-button restart-button hidden" id="restart-button" onclick="restartAudio()" aria-label="Restart audio"></button>
+    </div>
+    <div class="hamburger" onclick="toggleSidebar()">
+      <img src="assets/hamburger_button.png" alt="Menu">
+    </div>
+    <div class="nav-buttons">
+      <a href="home.html"><button class="nav-button home">HOME</button></a>
+      <a href="about-us.html"><button class="nav-button about-us">ABOUT US</button></a>
+      <div class="dropdown">
+        <button class="nav-button events">EVENTS</button>
+        <div class="dropdown-content">
+          <a href="events.html">ALL</a>
+          <a href="acm-main-events.html">ACM-MAIN</a>
+          <a href="acm-w-events.html">ACM-W</a>
+          <a href="sig-ai-events.html">SIG-AI</a>
+          <a href="sig-soft-events.html">SIG-SOFT</a>
+        </div>
+      </div>
+      <a href="constituents.html"><button class="nav-button constituents">CONSTITUENTS</button></a>
+      <a href="join-us.html"><button class="nav-button join-us">JOIN US</button></a>
+      <div class="dropdown">
+        <button class="nav-button team">TEAM</button>
+        <div class="dropdown-content">
+          <a href="acm-main-team.html">ACM-MAIN</a>
+          <a href="acm-w-team.html">ACM-W</a>
+          <a href="sig-ai-team.html">SIG-AI</a>
+          <a href="sig-soft-team.html">SIG-SOFT</a>
+        </div>
+      </div>
+      <a href="contact-us.html"><button class="nav-button contact-us">CONTACT US</button></a>
+      <a href="login-signup.html"><button class="nav-button login-signup">LOGIN | SIGN UP</button></a>
+    </div>
+  </div>
+
+  <!-- Full-width image positioned below the navigation bar -->
+  <div class="events-image-container">
+    <img src="assets/events.png" class="events-image" alt="Events Banner">
+    <div class="image-text">EVENTS</div>
+  </div>
+
+  <!-- Countdown Box -->
+  <div class="countdown-box">
+    <div class="countdown-text">COUNTDOWN</div>
+    <div id="countdown" class="countdown-timer"></div>
+  </div>
+
+  <!-- Upcoming Events Box -->
+  <div class="upcoming-events-box">
+    <div class="upcoming-events-text">UPCOMING EVENTS</div>
+  </div>
+
+  <!-- Row of Three Boxes Below 'UPCOMING EVENTS' -->
+  <div class="boxes-container">
+    <div class="box">
+      <img src="assets/hour-of-code.png" alt="Box 1">
+      <div class="box-text"><strong>Hour Of Code</strong><br>The Hour of Code is a global initiative introducing people of all ages to the basics of coding through fun, interactive, and beginner-friendly tutorials, to be conducted by the MITB ACM Main Chapter from December 9th to 11th.</div>
+    </div>
+    <div class="box">
+      <img src="assets/kaspersky.png" alt="Box 2">
+      <div class="box-text"><strong>Gamethon( Kaspersky )</strong><br>A Gamethon will be conducted by MITB ACM in collaboration with Kaspersky from 8th to 9th of January.</div>
+    </div>
+    <div class="box">
+      <img src="assets/turinger.png" alt="Box 3">
+      <div class="box-text"><strong>Turinger</strong><br>Flagship event of ACM MIT Bengaluru. Dive into a world of innovation, collaboration, and tech exploration with workshops, seminars, and networking opportunities. Let's celebrate our passion for computing together! To be conducted from January 17th to 19th!</div>
+    </div>
+  </div>
+  <div class="boxes-container">
+    <div class="box">
+      <img src="assets/acm_w_logo_events.png" alt="Box 1">
+      <div class="box-text"><strong>Scavenger Hunt</strong><br>Get ready for an adventurous Scavenger Hunt hosted by the MITB ACM-W Chapter from 25th to 26th January! Test your problem-solving skills and teamwork in this exciting two-day challenge.</div>
+    </div>
+    <div class="box">
+      <img src="assets/sig_soft_logo_events.png" alt="Box 2">
+      <div class="box-text"><strong>Cloud Computing Bootcamp</strong><br>Join us for an immersive Cloud Computing Bootcamp by SIG-SOFT from 31st January to 1st February. Enhance your skills with hands-on training and expert insights into the world of cloud technologies!</div>
+    </div>
+    <div class="box">
+      <img src="assets/sig_ai_logo_events.png" alt="Box 3">
+      <div class="box-text"><strong>Introduction to AI-DS 2.0</strong><br>Join us for the "Introduction to AI-DS 2.0" workshop, where you'll explore the cutting-edge advancements in Artificial Intelligence and Data Science. Gain hands-on experience and insights that will empower you to excel in the rapidly evolving tech landscape. From February 8th-9th.</div>
+    </div>
+  </div>
+  <div class="boxes-container">
+    <div class="box">
+      <img src="assets/acm_w_logo_events.png" alt="Box 1">
+      <div class="box-text"><strong>Brain Game</strong><br>The MITB ACM-W Student Chapter is hosting "Brain Game" on 15th February, an exciting event to challenge and sharpen your mind. Don't miss out on a fun-filled day of puzzles, strategy, and teamwork!</div>
+    </div>
+    <div class="box">
+      <img src="assets/Honeywell.png" alt="Box 2">
+      <div class="box-text"><strong>HackNite( Honeywell )</strong><br>Join us for HackNite, hosted by Honeywell and MITB ACM, from 21st to 23rd February! Unleash your creativity and coding skills in this thrilling hackathon and compete for exciting prizes.</div>
+    </div>
+    <div class="box">
+      <img src="assets/sig_soft_logo_events.png" alt="Box 3">
+      <div class="box-text"><strong>Code Golf</strong><br>Get ready for the Code Golf competition hosted by SIG-SOFT on 1st-2nd March! Showcase your coding skills and creativity as you aim to write the shortest code for challenging problems.</div>
+    </div>
+  </div>
+  <div class="boxes-container">
+    <div class="box">
+      <img src="assets/Apple.png" alt="Box 1">
+      <div class="box-text"><strong>Apple Hackathon</strong><br>Join us for the Apple Hackathon on March 8-9! Unleash your creativity and coding skills in an exciting, fast-paced hackathon challenge.</div>
+    </div>
+    <div class="box">
+      <img src="assets/sig_ai_logo_events.png" alt="Box 2">
+      <div class="box-text"><strong>AI Detective Challenge</strong><br>Put your AI skills to the test at the AI Detective Challenge on March 22-23! Solve mysteries using artificial intelligence and prove your detective prowess. Hosted by SIG-AI.</div>
+    </div>
+    <div class="box">
+      <img src="assets/sig_soft_logo_events.png" alt="Box 3">
+      <div class="box-text"><strong>CTF Web Exploits Challenge</strong><br>Compete in the CTF Web Exploits Challenge on March 29! Test your cybersecurity skills as you hunt for vulnerabilities in a simulated web environment. Hosted by SIG-SOFT.</div>
+    </div>
+  </div>
+  <div class="boxes-container">
+    <div class="box">
+      <img src="assets/CGI.png" alt="Box 1">
+      <div class="box-text"><strong>CGI Hackathon</strong><br>Join the CGI Hackathon on April 4-5! Collaborate with teams to solve real-world problems and showcase your tech skills in an exciting challenge.</div>
+    </div>
+    <div class="box">
+      <img src="assets/sig_ai_logo_events.png" alt="Box 2">
+      <div class="box-text"><strong>Code-AI Week</strong><br>Don't miss CODE-AI Week, from April 7-12! Dive deep into the world of AI with flagship events, workshops, and exciting competitions.</div>
+    </div>
+    <div class="box">
+      <img src="assets/acm_w_logo_events.png" alt="Box 3">
+      <div class="box-text"><strong>ACM-W Tech Talk</strong><br>Join the ACM-W Tech Talk on April 19 for insights from industry experts! Gain valuable knowledge on cutting-edge tech trends and career development.</div>
+    </div>
+  </div>
+  <div class="boxes-container">
+    <div class="box">
+      <img src="assets/sig_ai_logo_events.png" alt="Box 1">
+      <div class="box-text"><strong>Industry Expert Talk</strong><br>Learn from the best at the Industry Expert Talk on April 26, hosted by SIG-AI! Get a glimpse into the future of AI from an industry leader.</div>
+    </div>
+    <div class="box">
+      <img src="assets/sig_ai_logo_events.png" alt="Box 2">
+      <div class="box-text"><strong>AI MUN</strong><br>Participate in the AI MUN on May 2-3! Engage in AI-driven debates and discussions for a unique learning experience.</div>
+    </div>
+    <div class="box">
+      <img src="assets/IBM.png" alt="Box 3">
+      <div class="box-text"><strong>IBM Hackathon</strong><br>Join the IBM Hackathon on May 9-10! Challenge yourself with cutting-edge tech and innovation in a high-energy hackathon environment.</div>
+    </div>
+  </div>
+
+  <!-- Past Events Box Below the Row of Three Boxes -->
+  <div class="past-events-box">
+    <div class="past-events-text">PAST EVENTS</div>
+  </div>
+  <div class="boxes-container">
+    <div class="box">
+      <img src="assets/box1-image.png" alt="Box 1">
+      <div class="box-text">Box 1 Text</div>
+    </div>
+    <div class="box">
+      <img src="assets/box2-image.png" alt="Box 2">
+      <div class="box-text">Box 2 Text</div>
+    </div>
+    <div class="box">
+      <img src="assets/box3-image.png" alt="Box 3">
+      <div class="box-text">Box 3 Text</div>
+    </div>
+  </div>
+  <div class="boxes-container">
+    <div class="box">
+      <img src="assets/box1-image.png" alt="Box 1">
+      <div class="box-text">Box 1 Text</div>
+    </div>
+    <div class="box">
+      <img src="assets/box2-image.png" alt="Box 2">
+      <div class="box-text">Box 2 Text</div>
+    </div>
+    <div class="box">
+      <img src="assets/box3-image.png" alt="Box 3">
+      <div class="box-text">Box 3 Text</div>
+    </div>
+  </div>
+  <div class="boxes-container">
+    <div class="box">
+      <img src="assets/box1-image.png" alt="Box 1">
+      <div class="box-text">Box 1 Text</div>
+    </div>
+    <div class="box">
+      <img src="assets/box2-image.png" alt="Box 2">
+      <div class="box-text">Box 2 Text</div>
+    </div>
+    <div class="box">
+      <img src="assets/box3-image.png" alt="Box 3">
+      <div class="box-text">Box 3 Text</div>
+    </div>
+  </div>
+
+  <div class="sidebar" id="sidebar">
+    <a href="home.html"><button class="nav-button home">HOME</button></a>
+    <a href="about-us.html"><button class="nav-button about-us">ABOUT US</button></a>
+    <div class="dropdown">
+      <button class="nav-button events">EVENTS</button>
+      <div class="dropdown-content">
+        <a href="events.html">ALL</a>
+        <a href="acm-main-events.html">ACM-MAIN</a>
+        <a href="acm-w-events.html">ACM-W</a>
+        <a href="sig-ai-events.html">SIG-AI</a>
+        <a href="sig-soft-events.html">SIG-SOFT</a>
+      </div>
+    </div>
+    <a href="constituents.html"><button class="nav-button constituents">CONSTITUENTS</button></a>
+    <a href="join-us.html"><button class="nav-button join-us">JOIN US</button></a>
+    <div class="dropdown">
+      <button class="nav-button team">TEAM</button>
+      <div class="dropdown-content">
+        <a href="acm-main-team.html">ACM-MAIN</a>
+        <a href="acm-w-team.html">ACM-W</a>
+        <a href="sig-ai-team.html">SIG-AI</a>
+        <a href="sig-soft-team.html">SIG-SOFT</a>
+      </div>
+    </div>
+    <a href="contact-us.html"><button class="nav-button contact-us">CONTACT US</button></a>
+    <a href="login-signup.html"><button class="nav-button login-signup">LOGIN | SIGN UP</button></a>
+  </div>
+
+  <script src="sidebar.js"></script>
+  <script src="audio.js"></script>
+  <script src="countdown-events.js"></script>
+</body>
+</html>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MITB ACM Student Chapter</title>
+  <link rel="icon" href="assets/logo.png" type="image/png">
+  <link rel="stylesheet" href="acm-team-style.css">
+</head>
+<body>
+  <div class="header">
+    <img src="assets/logo.png" class="logo" alt="Logo">
+    <div class="audio-container">
+      <button class="audio-button" id="audio-button" onclick="showControls()" aria-label="Audio controls"></button>
+      <button class="control-button pause-button hidden" id="play-pause-button" onclick="togglePause()" aria-label="Pause audio"></button>
+      <button class="control-button restart-button hidden" id="restart-button" onclick="restartAudio()" aria-label="Restart audio"></button>
+    </div>
+    <div class="hamburger" onclick="toggleSidebar()">
+      <img src="assets/hamburger_button.png" alt="Menu">
+    </div>
+    <div class="nav-buttons">
+      <a href="home.html"><button class="nav-button home">HOME</button></a>
+      <a href="about-us.html"><button class="nav-button about-us">ABOUT US</button></a>
+      <div class="dropdown">
+        <button class="nav-button events">EVENTS</button>
+        <div class="dropdown-content">
+          <a href="events.html">ALL</a>
+          <a href="acm-main-events.html">ACM-MAIN</a>
+          <a href="acm-w-events.html">ACM-W</a>
+          <a href="sig-ai-events.html">SIG-AI</a>
+          <a href="sig-soft-events.html">SIG-SOFT</a>
+        </div>
+      </div>
+      <a href="constituents.html"><button class="nav-button constituents">CONSTITUENTS</button></a>
+      <a href="join-us.html"><button class="nav-button join-us">JOIN US</button></a>
+      <div class="dropdown">
+        <button class="nav-button team">TEAM</button>
+        <div class="dropdown-content">
+          <a href="acm-main-team.html">ACM-MAIN</a>
+          <a href="acm-w-team.html">ACM-W</a>
+          <a href="sig-ai-team.html">SIG-AI</a>
+          <a href="sig-soft-team.html">SIG-SOFT</a>
+        </div>
+      </div>
+      <a href="contact-us.html"><button class="nav-button contact-us">CONTACT US</button></a>
+      <a href="login-signup.html"><button class="nav-button login-signup">LOGIN | SIGN UP</button></a>
+    </div>
+  </div>
+
+  <div class="content-wrapper">
+    <div class="title-box">TEAM</div>
+  </div>
+  <div class="carousel-container">
+    <button class="carousel-button" id="prev-button">
+      <img src="assets/backward.png" alt="Previous">
+    </button>
+    <div class="carousel">
+      <div class="team-member-box">
+        <img src="assets/Dr_Gururaj_HL.png" alt="Dr. Gururaj HL">
+        <div class="member-name">Dr. Gururaj HL</div>
+        <div class="member-role">Faculty Sponsor</div>
+      </div>
+      <div class="team-member-box">
+        <img src="assets/Dr_Shreyas_J.png" alt="Dr. Shreyas J">
+        <div class="member-name">Dr. Shreyas J</div>
+        <div class="member-role">Membership Chair</div>
+      </div>
+      <div class="team-member-box">
+        <img src="assets/Karthikeya_Chowdary.png" alt="Karthikeya Chowdary">
+        <div class="member-name">Karthikeya Chowdary</div>
+        <div class="member-role">Chair</div>
+      </div>
+      <div class="team-member-box">
+        <img src="assets/Nishanth_Shet.png" alt="Nishanth Shet">
+        <div class="member-name">Nishanth Shet</div>
+        <div class="member-role">Vice Chair</div>
+      </div>
+      <div class="team-member-box">
+        <img src="assets/Sashi_Pritam_M_A.png" alt="Sashi Pritam M A">
+        <div class="member-name">Sashi Pritam M A</div>
+        <div class="member-role">General Secretary</div>
+      </div>
+      <div class="team-member-box">
+        <img src="assets/Sumedh_Kashyap.png" alt="Sumedh Kashyap">
+        <div class="member-name">Sumedh Kashyap</div>
+        <div class="member-role">Treasurer</div>
+      </div>
+      <div class="team-member-box">
+        <img src="assets/Induj_Gupta.png" alt="Induj Gupta">
+        <div class="member-name">Induj Gupta</div>
+        <div class="member-role">Web Master</div>
+      </div>
+      <div class="team-member-box">
+        <img src="assets/Nishant_Namboodiri.png" alt="Nishanth Namboodiri">
+        <div class="member-name">Nishant Namboodiri</div>
+        <div class="member-role">Media Head</div>
+      </div>
+      <div class="team-member-box">
+        <img src="assets/Advithiya_Duddu.png" alt="Advithiya Duddu">
+        <div class="member-name">Advithiya Duddu</div>
+        <div class="member-role">Executive Member</div>
+      </div>
+      <div class="team-member-box">
+        <img src="assets/Sai_Tej_Gadiyaram.png" alt="Sai Tej Gadiyaram">
+        <div class="member-name">Sai Tej Gadiyaram</div>
+        <div class="member-role">Executive Member</div>
+      </div>
+      <div class="team-member-box">
+        <img src="assets/Surya_Venkata_Ritesh_Rimmalapudi.png" alt="Surya Venkata Ritesh Rimmalapudi">
+        <div class="member-name">Surya Venkata Ritesh Rimmalapudi</div>
+        <div class="member-role">Executive Member</div>
+      </div>
+      <div class="team-member-box">
+        <img src="assets/Vaibhav_Jyotish.png" alt="Vaibhav Jyotish">
+        <div class="member-name">Vaibhav Jyotish</div>
+        <div class="member-role">Photography Head</div>
+      </div>
+      <div class="team-member-box">
+        <img src="assets/Joy_Mandal.png" alt="Joy Mandal">
+        <div class="member-name">Joy Mandal</div>
+        <div class="member-role">Photography</div>
+      </div>
+      <div class="team-member-box">
+        <img src="assets/Manoj_Kumar_Thadi.png" alt="Manoj Kumar Thadi">
+        <div class="member-name">Manoj Kumar Thadi</div>
+        <div class="member-role">Photography</div>
+      </div>
+      <div class="team-member-box">
+        <img src="assets/Devansh_Kewlani.png" alt="Devansh Kewlani">
+        <div class="member-name">Devansh Kewlani</div>
+        <div class="member-role">Graphic Designer</div>
+      </div>
+      <div class="team-member-box">
+        <img src="assets/acm_w_logo.png" alt="ACM-W">
+      </div>
+      <div class="team-member-box">
+        <img src="assets/acm_w_logo.png" alt="ACM-W">
+      </div>
+    </div>
+    <button class="carousel-button" id="next-button">
+      <img src="assets/forward.png" alt="Next">
+    </button>
+  </div>
+
+  <div class="sidebar" id="sidebar">
+    <a href="home.html"><button class="nav-button home">HOME</button></a>
+    <a href="about-us.html"><button class="nav-button about-us">ABOUT US</button></a>
+    <div class="dropdown">
+      <button class="nav-button events">EVENTS</button>
+      <div class="dropdown-content">
+        <a href="events.html">ALL</a>
+        <a href="acm-main-events.html">ACM-MAIN</a>
+        <a href="acm-w-events.html">ACM-W</a>
+        <a href="sig-ai-events.html">SIG-AI</a>
+        <a href="sig-soft-events.html">SIG-SOFT</a>
+      </div>
+    </div>
+    <a href="constituents.html"><button class="nav-button constituents">CONSTITUENTS</button></a>
+    <a href="join-us.html"><button class="nav-button join-us">JOIN US</button></a>
+    <div class="dropdown">
+      <button class="nav-button team">TEAM</button>
+      <div class="dropdown-content">
+        <a href="acm-main-team.html">ACM-MAIN</a>
+        <a href="acm-w-team.html">ACM-W</a>
+        <a href="sig-ai-team.html">SIG-AI</a>
+        <a href="sig-soft-team.html">SIG-SOFT</a>
+      </div>
+    </div>
+    <a href="contact-us.html"><button class="nav-button contact-us">CONTACT US</button></a>
+    <a href="login-signup.html"><button class="nav-button login-signup">LOGIN | SIGN UP</button></a>
+  </div>
+
+  <script src="sidebar.js"></script>
+  <script src="audio.js"></script>
+  <script src="team-rotation.js"></script>
+</body>
+</html>

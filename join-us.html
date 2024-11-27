@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MITB ACM Student Chapter</title>
+  <link rel="icon" href="assets/logo.png" type="image/png">
+  <link rel="stylesheet" href="join-us-style.css">
+</head>
+<body>
+  <div class="header">
+    <img src="assets/logo.png" class="logo" alt="Logo">
+    <div class="audio-container">
+      <button class="audio-button" id="audio-button" onclick="showControls()" aria-label="Audio controls"></button>
+      <button class="control-button pause-button hidden" id="play-pause-button" onclick="togglePause()" aria-label="Pause audio"></button>
+      <button class="control-button restart-button hidden" id="restart-button" onclick="restartAudio()" aria-label="Restart audio"></button>
+    </div>
+    <div class="hamburger" onclick="toggleSidebar()">
+      <img src="assets/hamburger_button.png" alt="Menu">
+    </div>
+    <div class="nav-buttons">
+      <a href="home.html"><button class="nav-button home">HOME</button></a>
+      <a href="about-us.html"><button class="nav-button about-us">ABOUT US</button></a>
+      <div class="dropdown">
+        <button class="nav-button events">EVENTS</button>
+        <div class="dropdown-content">
+          <a href="events.html">ALL</a>
+          <a href="acm-main-events.html">ACM-MAIN</a>
+          <a href="acm-w-events.html">ACM-W</a>
+          <a href="sig-ai-events.html">SIG-AI</a>
+          <a href="sig-soft-events.html">SIG-SOFT</a>
+        </div>
+      </div>
+      <a href="constituents.html"><button class="nav-button constituents">CONSTITUENTS</button></a>
+      <a href="join-us.html"><button class="nav-button join-us">JOIN US</button></a>
+      <div class="dropdown">
+        <button class="nav-button team">TEAM</button>
+        <div class="dropdown-content">
+          <a href="acm-main-team.html">ACM-MAIN</a>
+          <a href="acm-w-team.html">ACM-W</a>
+          <a href="sig-ai-team.html">SIG-AI</a>
+          <a href="sig-soft-team.html">SIG-SOFT</a>
+        </div>
+      </div>
+      <a href="contact-us.html"><button class="nav-button contact-us">CONTACT US</button></a>
+      <a href="login-signup.html"><button class="nav-button login-signup">LOGIN | SIGN UP</button></a>
+    </div>
+  </div>
+
+  <div class="content-wrapper">
+    <div class="title-box">JOIN US</div>
+  </div>
+
+  <div class="tutorial-section">
+    <p class="tutorial-text">
+      <strong>Interested in joining ACM as a student member?</strong>
+    </p>
+
+    <p class="tutorial-text">
+      Here is a step-by-step guide to help you seamlessly obtain your ACM student membership.
+    </p>
+
+    <p class="tutorial-step"><strong>Step 1 : </strong>Visit <strong><a href="https://www.acm.org/" target="_blank" class="acm-link">https://www.acm.org/</a></strong> and click on the <strong>"Join"</strong> button located at the top right corner of the page.</p>
+
+    <div class="tutorial-image">
+      <img src="assets/step-1.png" alt="ACM Website" class="tutorial-img">
+    </div>
+
+    <p class="tutorial-step"><strong>Step 2 : </strong>If you are an Indian student, click on the <strong>"India"</strong> link under the <strong>Students</strong> section. Otherwise, select the option that suits your region.</p>
+
+    <div class="tutorial-image">
+      <img src="assets/step-2.png" alt="India Link" class="tutorial-img">
+    </div>
+
+    <p class="tutorial-step"><strong>Step 3 : </strong>Fill in the required details, scroll down, and click <strong>Continue</strong> to proceed.</p>
+
+    <div class="tutorial-image">
+      <img src="assets/step-3.png" alt="Enter Details and Continue" class="tutorial-img">
+    </div>
+
+    <p class="tutorial-step"><strong>Step 4 : </strong>If you are interested in additional resources such as <strong>ACM Books Series</strong>, <strong>Special Interest Groups (SIGs)</strong>, <strong>Journals</strong>, <strong>Transactions</strong>, or <strong>Magazines</strong>, select the respective options on the checkout page to add them to your cart.</p>
+
+    <div class="tutorial-image">
+      <img src="assets/step-4.png" alt="Add to Cart Options" class="tutorial-img">
+    </div>
+
+    <p class="tutorial-step"><strong>Step 5 : </strong>Choose your state of residence, click on <strong>"Complete using Indian CC"</strong>, complete the payment process, and take a screenshot of the confirmation page.</p>
+
+    <div class="tutorial-image">
+      <img src="assets/step-5.png" alt="Payment Confirmation" class="tutorial-img">
+    </div>
+
+    <p class="tutorial-text"><strong>Welcome to ACM! Happy Learning!</strong></p>
+  </div>
+
+  <div class="sidebar" id="sidebar">
+    <a href="home.html"><button class="nav-button home">HOME</button></a>
+    <a href="about-us.html"><button class="nav-button about-us">ABOUT US</button></a>
+    <div class="dropdown">
+      <button class="nav-button events">EVENTS</button>
+      <div class="dropdown-content">
+        <a href="events.html">ALL</a>
+        <a href="acm-main-events.html">ACM-MAIN</a>
+        <a href="acm-w-events.html">ACM-W</a>
+        <a href="sig-ai-events.html">SIG-AI</a>
+        <a href="sig-soft-events.html">SIG-SOFT</a>
+      </div>
+    </div>
+    <a href="constituents.html"><button class="nav-button constituents">CONSTITUENTS</button></a>
+    <a href="join-us.html"><button class="nav-button join-us">JOIN US</button></a>
+    <div class="dropdown">
+      <button class="nav-button team">TEAM</button>
+      <div class="dropdown-content">
+        <a href="acm-main-team.html">ACM-MAIN</a>
+        <a href="acm-w-team.html">ACM-W</a>
+        <a href="sig-ai-team.html">SIG-AI</a>
+        <a href="sig-soft-team.html">SIG-SOFT</a>
+      </div>
+    </div>
+    <a href="contact-us.html"><button class="nav-button contact-us">CONTACT US</button></a>
+    <a href="login-signup.html"><button class="nav-button login-signup">LOGIN | SIGN UP</button></a>
+  </div>
+
+  <script src="sidebar.js"></script>
+  <script src="audio.js"></script>
+</body>
+</html>

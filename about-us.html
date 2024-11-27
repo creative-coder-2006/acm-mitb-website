@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MITB ACM Student Chapter</title>
+  <link rel="icon" href="assets/logo.png" type="image/png">
+  <link rel="stylesheet" href="about-us-style.css">
+</head>
+<body>
+  <div class="header">
+    <img src="assets/logo.png" class="logo" alt="Logo">
+    <div class="audio-container">
+      <button class="audio-button" id="audio-button" onclick="showControls()" aria-label="Audio controls"></button>
+      <button class="control-button pause-button hidden" id="play-pause-button" onclick="togglePause()" aria-label="Pause audio"></button>
+      <button class="control-button restart-button hidden" id="restart-button" onclick="restartAudio()" aria-label="Restart audio"></button>
+    </div>
+    <div class="hamburger" onclick="toggleSidebar()">
+      <img src="assets/hamburger_button.png" alt="Menu">
+    </div>
+    <div class="nav-buttons">
+      <a href="home.html"><button class="nav-button home">HOME</button></a>
+      <a href="about-us.html"><button class="nav-button about-us">ABOUT US</button></a>
+      <div class="dropdown">
+        <button class="nav-button events">EVENTS</button>
+        <div class="dropdown-content">
+          <a href="events.html">ALL</a>
+          <a href="acm-main-events.html">ACM-MAIN</a>
+          <a href="acm-w-events.html">ACM-W</a>
+          <a href="sig-ai-events.html">SIG-AI</a>
+          <a href="sig-soft-events.html">SIG-SOFT</a>
+        </div>
+      </div>
+      <a href="constituents.html"><button class="nav-button constituents">CONSTITUENTS</button></a>
+      <a href="join-us.html"><button class="nav-button join-us">JOIN US</button></a>
+      <div class="dropdown">
+        <button class="nav-button team">TEAM</button>
+        <div class="dropdown-content">
+          <a href="acm-main-team.html">ACM-MAIN</a>
+          <a href="acm-w-team.html">ACM-W</a>
+          <a href="sig-ai-team.html">SIG-AI</a>
+          <a href="sig-soft-team.html">SIG-SOFT</a>
+        </div>
+      </div>
+      <a href="contact-us.html"><button class="nav-button contact-us">CONTACT US</button></a>
+      <a href="login-signup.html"><button class="nav-button login-signup">LOGIN | SIGN UP</button></a>
+    </div>
+  </div>
+
+  <!-- Full-width image positioned below the navigation bar -->
+  <div class="mitb-image-container">
+    <img src="assets/about-us.png" class="mitb-image" alt="about-us Banner">
+    <div class="image-text">ABOUT US</div>
+  </div>
+
+  <!-- Title and paragraph container -->
+  <div class="content-container">
+    <div class="content-title">About : MITB</div>
+    <div class="content-paragraph">Manipal Institute of Technology Bengaluru (MITB) is a prestigious educational institution that is part of the renowned Manipal Academy of Higher Education (MAHE). Situated in the heart of Bengaluru, MITB offers cutting-edge programs in various fields of engineering and technology. The institute is known for its innovative teaching methods, state-of-the-art infrastructure, and a strong emphasis on research and development. With a diverse student body and world-class faculty, MITB fosters a dynamic learning environment that encourages creativity, critical thinking, and collaboration. The campus is equipped with modern amenities, including laboratories, libraries, and recreational facilities, ensuring a well-rounded academic experience for students. Through industry partnerships and a robust placement system, MITB ensures that its graduates are well-prepared to excel in the global job market.</div>
+  </div>
+
+  <!-- Divider line -->
+  <div class="divider-line"></div>
+
+  <!-- Title and paragraph container -->
+  <div class="content-container">
+    <div class="content-title">About : ACM</div>
+    <div class="content-paragraph">The Association for Computing Machinery (ACM) is a global professional organization dedicated to advancing computing as a science and a profession. Founded in 1947, ACM serves as a hub for computing professionals, researchers, educators, and students, providing resources, conferences, publications, and a platform for collaboration. ACM fosters innovation and the exchange of knowledge through its various special interest groups (SIGs), which cover a wide range of topics in computer science, including artificial intelligence, software engineering, cybersecurity, and human-computer interaction. ACM also promotes computing education, advocating for the integration of computing into curricula at all levels. The organization plays a crucial role in shaping the future of technology, offering a range of career development opportunities and supporting the professional growth of its members. Through its prestigious awards and recognition programs, ACM honors groundbreaking contributions to the field of computing.</div>
+  </div>
+
+  <!-- Divider line -->
+  <div class="divider-line"></div>
+
+  <!-- Title and paragraph container -->
+  <div class="content-container">
+    <div class="content-title">About : ACM @ MITB</div>
+    <div class="content-paragraph">The ACM chapter at Manipal Institute of Technology, Bengaluru, is a thriving community for computing students. Focused on technology advancement, it fosters collaboration and idea exchange among students, faculty, and industry experts. Through workshops, seminars, and activities, the chapter provides hands-on experience with cutting-edge technologies, promoting dynamic learning environments. Introducing SIG-AI, SIG-SOFT, and ACM-W, the chapter emphasizes artificial intelligence, software engineering, and support for women in computing. Committed to ethical standards and responsible AI use, we shape the future of computing in the region.</div>
+  </div>
+
+  <!-- Divider line -->
+  <div class="divider-line"></div>
+
+  <!-- Title and paragraph container -->
+  <div class="content-container">
+    <div class="content-title">Salient Features of ACM Membership</div>
+    <div class="content-paragraph">
+      <ul>
+        <li><strong>ACM TechNews</strong> : A daily newsletter that provides members with the latest updates and trends in the world of computing, keeping them informed about the newest research, technological advancements, and industry news.</li>
+        <li><strong>ACM CareerNews</strong> : A specialized resource that helps members stay updated on career opportunities, job trends, and professional development advice in the computing industry, facilitating career growth and networking.</li>
+        <li><strong>Access to Pluralsight</strong> : Members receive free access to Pluralsight, an online learning platform offering courses in various technical areas such as programming, software development, data science, and cybersecurity, helping members advance their skills.</li>
+        <li><strong>ACM Digital Library</strong> : A comprehensive digital library that offers access to an extensive collection of research papers, journals, conference proceedings, and other valuable resources, enabling members to stay at the forefront of academic and practical computing knowledge.</li>
+        <li><strong>Conferences and Events</strong> : Discounted or free access to various ACM conferences, workshops, and events where members can connect with industry experts, collaborate on projects, and participate in discussions about the future of computing.</li>
+        <li><strong>Professional Networking</strong> : Membership provides opportunities to connect with like-minded professionals, researchers, and experts in the field of computing, fostering collaboration and knowledge-sharing within the global ACM community.</li>
+        <li><strong>Awards and Recognition</strong> : ACM members are eligible for various awards and recognitions that highlight outstanding contributions to the field, offering a platform to showcase their work and achievements.</li>
+        <li><strong>Special Interest Groups (SIGs)</strong> : Access to a wide range of SIGs focused on specific areas of computing, allowing members to deepen their expertise, participate in discussions, and collaborate on specialized projects.</li>
+      </ul>
+    </div>
+  </div>
+  <!-- Divider line after the 4th paragraph -->
+  <div class="divider-line"></div>
+
+  <!-- Title and paragraph container -->
+  <div class="content-container">
+    <div class="content-title">Causes</div>
+    <div class="content-paragraph">
+      <ul>
+        <li><strong>LGBTQ+ Inclusion</strong> : ACM promotes a welcoming environment for LGBTQ+ individuals, ensuring that all members feel valued and supported within the computing community.</li>
+        <li><strong>Accessibility for Persons with Disabilities</strong> : ACM advocates for accessible technology and equal opportunities for individuals with disabilities, supporting inclusive design and development.</li>
+        <li><strong>Gender Equality in Computing</strong> : ACM is dedicated to addressing gender disparity in technology fields by encouraging participation and leadership of women in computing.</li>
+        <li><strong>Racial and Ethnic Diversity</strong> : ACM works to foster greater racial and ethnic diversity within the computing profession, recognizing and addressing barriers to entry and advancement.</li>
+        <li><strong>Support for Economically Disadvantaged Individuals</strong> : ACM strives to create opportunities and resources for individuals from economically disadvantaged backgrounds to pursue careers in computing.</li>
+    </div>
+    </div>
+    <!-- Divider line after the 4th paragraph -->
+    <div class="divider-line"></div>
+  <!-- Why ACM? title centered -->
+  <div class="acm-benefits">Benefits of ACM</div>
+  <div class="divider-line"></div>
+
+  <!-- Title and paragraph 1 -->
+  <div class="content-container">
+    <div class="content-title">1. Engaging Events</div>
+    <div class="content-paragraph">We organize various events throughout the academic year, including workshops, speaker events, company visits, and off-campus activities. These events are designed to provide valuable insights, hands-on experience, and networking opportunities with professionals from academia and industry.</div>
+  </div>
+
+  <!-- Divider line -->
+  <div class="divider-line"></div>
+
+  <!-- Title and paragraph 2 -->
+  <div class="content-container">
+    <div class="content-title">2. Knowledge Sharing</div>
+    <div class="content-paragraph">As an ACM Student Chapter member, you will have access to a wealth of resources, such as technical papers, journals, and ACM's Digital Library. We also conduct study groups and interactive sessions where you can exchange ideas, discuss emerging trends, and explore the frontiers of computer science.</div>
+  </div>
+
+  <!-- Divider line -->
+  <div class="divider-line"></div>
+
+  <!-- Title and paragraph 3 -->
+  <div class="content-container">
+    <div class="content-title">3. Career Development</div>
+    <div class="content-paragraph">We understand the importance of preparing for a successful career in computing. Our chapter takes part in career fairs and provides a great network of opportunities. Additionally, we collaborate with industry experts and alumni to provide internships, job placements, and mentorship programs to help you navigate your professional journey.</div>
+  </div>
+
+  <!-- Divider line -->
+  <div class="divider-line"></div>
+
+  <!-- Title and paragraph 4 -->
+  <div class="content-container">
+    <div class="content-title">4. Networking</div>
+    <div class="content-paragraph">Building strong connections within the computing community is crucial for personal and professional growth. Our chapter offers a platform to meet and collaborate with students from diverse backgrounds, faculty members, and industry professionals. Expand your network, forge valuable relationships, and pave the way for exciting collaborations.</div>
+  </div>
+  <!-- Divider line before 'CHAPTER BY-LAWS' -->
+  <div class="divider-line"></div>
+
+  <!-- 'CHAPTER BY-LAWS' title centered -->
+  <div class="acm-benefits">CHAPTER BY-LAWS</div>
+
+  <!-- Divider line after 'CHAPTER BY-LAWS' -->
+  <div class="divider-line"></div>
+  <!-- Divider line before the article -->
+  <div class="divider-line"></div>
+
+  <!-- Title and Article I Purpose -->
+  <div class="content-container">
+      <div class="content-title">Article I: Purpose</div>
+      <div class="content-paragraph">
+          1. The Chapter is organized and will be operated exclusively for educational and scientific purposes to promote the following:
+          <ul>
+              <li>An increased knowledge of and greater interest in the science, design, development, construction, languages, management, and applications of modern computing</li>
+              <li>Greater interest in computing and its applications</li>
+              <li>A means of communication between persons having an interest in computing</li>
+          </ul>
+          2. The Chapter will serve students at MIT Bangalore and other interested persons in the community.
+          <br>
+          3. The Chapter is chartered by ACM.
+      </div>
+  </div>
+  <!-- Divider line before Article II -->
+  <div class="divider-line"></div>
+
+  <!-- Article II: Membership -->
+  <div class="content-container">
+      <div class="content-title">Article II: Membership</div>
+      <div class="content-paragraph">
+          Membership in the Student Chapter shall be open to all ACM members and nonmembers.
+          <br>
+          Voting membership in the Student Chapter shall be granted to all active Chapter members.
+          <br>
+          Membership shall not be restricted according to race, creed, age, gender, disability, nationality, sexual orientation, economic status, veteran status, or parenthood.
+      </div>
+  </div>
+
+  <!-- Divider line after Article II -->
+  <div class="divider-line"></div>
+
+  <!-- Article III: Officers -->
+  <div class="content-container">
+      <div class="content-title">Article III: Officers</div>
+      <div class="content-paragraph">
+          The officers of this Chapter shall be: Chair, Vice Chair, and Treasurer. These individuals must be ACM Student Members. In addition, a Faculty Sponsor with an ACM Professional Membership is required. Other officers may also be established.
+          <br>
+          The officers shall be elected by a plurality of votes cast at the annual election meeting or via electronic voting and serve for a minimum of one year.
+          <br>
+          Appointment or nomination of an individual to an officer position within an ACM Chapter shall be in general limited to two full consecutive terms in the same position. This recommendation is intended to encourage the continuing infusion of new volunteers into the organization and to encourage office holders to give thought to planning for their successor.
+      </div>
+  </div>
+
+  <!-- Divider line after Article III -->
+  <div class="divider-line"></div>
+
+  <!-- Article IV: Duties of Officers -->
+  <div class="content-container">
+      <div class="content-title">Article IV: Duties of Officers</div>
+      <div class="content-paragraph">
+          The Chair is the principal officer and is responsible for leading the Chapter and managing its activities in accordance with the policies and procedures of ACM and these bylaws.
+          <br>
+          The Vice Chair shall preside at meetings in the absence of the Chair, assist the Chair in the management of the Chapter, and perform other duties that may be assigned by the Chair.
+          <br>
+          The Treasurer is tasked with maintaining Chapter meeting minutes, financial records, and dues collection. They prepare annual reports, submit amendments to ACM Headquarters, and carry out duties assigned by the Chair.
+          <br>
+          The Faculty Sponsor, a faculty or full-time staff member of the school, is pivotal in overseeing the Chapter's activities. Responsibilities include ensuring continuity, fostering student-faculty relations, upholding university standards, and managing finances if needed. They also advocate for the Chapter within the faculty and administration. For high school Chapters and underage students, their attendance at evening meetings is mandatory, or a designated chaperone approved by the school may attend.
+      </div>
+  </div>
+
+  <!-- Divider line after Article IV -->
+  <div class="divider-line"></div>
+
+  <!-- Article V: Meetings -->
+  <div class="content-container">
+      <div class="content-title">Article V: Meetings</div>
+      <div class="content-paragraph">
+          The Chapter shall hold meetings only in places that are open and accessible to all members of the Association.
+          <br>
+          An annual election meeting should be held. At this meeting, the Treasurer will present the required reports. Also, the election of officers shall be held.
+          <br>
+          Notices of all meetings shall be distributed to all members at least one week prior to any meeting.
+      </div>
+  </div>
+
+  <!-- Divider line after Article V -->
+  <div class="divider-line"></div>
+
+  <!-- Article VI: Disbursements and Dues -->
+  <div class="content-container">
+      <div class="content-title">Article VI: Disbursements and Dues</div>
+      <div class="content-paragraph">
+          Disbursements from the Treasury for Chapter expenditures shall be made by any active Chapter officer and shall be included in the minutes of its meetings.
+          <br>
+          Dues shall be fixed annually.
+      </div>
+  </div>
+
+  <!-- Divider line after Article VI -->
+  <div class="divider-line"></div>
+
+  <!-- Article VII: Amendment and Voting Procedures -->
+  <div class="content-container">
+      <div class="content-title">Article VII: Amendment and Voting Procedures</div>
+      <div class="content-paragraph">
+          All proposed changes to these Chapter Bylaws shall be approved by ACM Headquarters - Chapters Department before being presented to the Chapter membership for a vote.
+          <br>
+          No official business of the Chapter shall be conducted unless a quorum is present. A quorum of the Chapter shall be defined as a majority of the voting membership of the Chapter.
+          <br>
+          Officers will be elected by a plurality of votes cast.
+      </div>
+  </div>
+
+  <!-- Divider line after Article VII -->
+  <div class="divider-line"></div>
+
+  <!-- Article VIII: Code of Conduct -->
+  <div class="content-container">
+      <div class="content-title">Article VIII: Code of Conduct</div>
+      <div class="content-paragraph">
+          Harassment or hostile behavior is unwelcome, including speech that intimidates, creates discomfort, or interferes with a person’s participation or opportunity for participation, in a Chapter meeting or Chapter event. Harassment includes the use of abusive or degrading language, intimidation, stalking, harassing photography or recording, inappropriate physical contact, sexual imagery and unwelcome sexual attention. A response that the participant was “just joking,” or “teasing,” or being “playful,” will not be accepted.
+          <br>
+          Anyone witnessing or subject to unacceptable behavior should notify a Chapter officer or ACM Headquarters.
+          <br>
+          Individuals violating these standards may be sanctioned or excluded from further participation at the discretion of the Chapter officers or responsible committee members.
+      </div>
+  </div>
+
+  <!-- Divider line after Article VIII -->
+  <div class="divider-line"></div>
+
+
+  <div class="sidebar" id="sidebar">
+    <a href="home.html"><button class="nav-button home">HOME</button></a>
+    <a href="about-us.html"><button class="nav-button about-us">ABOUT US</button></a>
+    <div class="dropdown">
+      <button class="nav-button events">EVENTS</button>
+      <div class="dropdown-content">
+        <a href="events.html">ALL</a>
+        <a href="acm-main-events.html">ACM-MAIN</a>
+        <a href="acm-w-events.html">ACM-W</a>
+        <a href="sig-ai-events.html">SIG-AI</a>
+        <a href="sig-soft-events.html">SIG-SOFT</a>
+      </div>
+    </div>
+    <a href="constituents.html"><button class="nav-button constituents">CONSTITUENTS</button></a>
+    <a href="join-us.html"><button class="nav-button join-us">JOIN US</button></a>
+    <div class="dropdown">
+      <button class="nav-button team">TEAM</button>
+      <div class="dropdown-content">
+        <a href="acm-main-team.html">ACM-MAIN</a>
+        <a href="acm-w-team.html">ACM-W</a>
+        <a href="sig-ai-team.html">SIG-AI</a>
+        <a href="sig-soft-team.html">SIG-SOFT</a>
+      </div>
+    </div>
+    <a href="contact-us.html"><button class="nav-button contact-us">CONTACT US</button></a>
+    <a href="login-signup.html"><button class="nav-button login-signup">LOGIN | SIGN UP</button></a>
+  </div>
+
+  <script src="sidebar.js"></script>
+  <script src="audio.js"></script>
+</body>
+</html>

@@ -1,0 +1,397 @@
+/* Import Montserrat Black (900) and Montserrat Extra Light (200) font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;900&display=swap');
+
+/* Set the entire page background to black */
+body {
+  margin: 0;
+  background-color: #000000;
+  font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.logo {
+  width: 175px;
+  height: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.nav-buttons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-left: auto;
+}
+
+.nav-button {
+  font-size: 20px;
+  color: #ffffff;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-weight: 200;
+  text-transform: uppercase;
+  padding: 5px 10px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.nav-button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.login-signup {
+  color: #000000;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 10px 20px;
+}
+
+.login-signup:hover {
+  background-color: #ffffff; /* No hover effect */
+}
+
+/* Dropdown Menu */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #000000;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border: 1px solid #ffffff;
+}
+
+.dropdown-content a {
+  font-size: 18px;
+  color: #ffffff;
+  padding: 10px 15px;
+  text-decoration: none;
+  display: block;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 200;
+}
+
+.dropdown-content a:hover {
+  background-color: #333333;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Sidebar Styles */
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 70%;
+  height: 100%;
+  background-color: #000000;
+  overflow-y: auto;
+  transition: 0.3s;
+  padding: 20px;
+  z-index: 1000;
+}
+
+.sidebar.active {
+  right: 0;
+}
+
+.sidebar a {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+  z-index: 1100;
+}
+
+.hamburger img {
+  width: 40px;
+  height: auto;
+}
+
+@media (max-width: 1024px) {
+  .nav-buttons {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
+
+.mitb-image-container {
+  position: relative;
+  width: 100%;
+}
+
+.mitb-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.image-text {
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+  font-size: clamp(32px, 8vw, 120px); /* Ensure this remains larger */
+  font-weight: 900;
+  color: #ffffff;
+  white-space: pre-line;
+  line-height: 1.2;
+  text-shadow: 2px 2px 5px #000000;
+}
+
+.home-title {
+  font-size: clamp(24px, 5vw, 45px); /* Responsive title size */
+  font-weight: 900;
+  color: #ffffff;
+  text-align: left;
+  margin: 20px 0;
+}
+
+.home-title {
+  font-size: clamp(24px, 5vw, 45px); /* Responsive title size */
+  font-weight: 900;
+  color: #ffffff;
+  text-align: left;
+  margin: 20px 0;
+}
+
+.home-content {
+  font-family: 'Montserrat', sans-serif;
+  color: #ffffff;
+  font-size: 25px;
+  font-weight: 200;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.divider-line {
+  width: 100%;
+  height: 1px;
+  background-color: #ffffff;
+  margin-top: 20px;
+}
+
+.why-acm-title {
+  font-size: clamp(24px, 4vw, 45px); /* Slightly smaller max size */
+  font-weight: 900;
+  color: #ffffff;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.audio-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: 15px;
+}
+
+.audio-button, .control-button {
+  width: 50px;
+  height: 50px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+}
+
+.audio-button {
+  background-image: url('assets/audio.png'); /* Replace with your audio icon */
+}
+
+.play-button {
+  background-image: url('assets/play.png'); /* Replace with your play icon */
+}
+
+.pause-button {
+  background-image: url('assets/pause.png'); /* Replace with your pause icon */
+}
+
+.restart-button {
+  background-image: url('assets/restart.png'); /* Replace with your restart icon */
+}
+
+.hidden {
+  display: none;
+}
+
+/* Ensuring no horizontal overflow and proper content containment */
+* {
+  box-sizing: inherit;
+}
+
+/* Header container for the logo and navigation buttons */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  width: 100%;
+}
+
+/* Positioning and resizing the logo */
+.logo {
+  width: 175px;
+  height: auto;
+  margin-right: auto;
+}
+
+/* Navigation bar styling */
+.nav-buttons {
+  display: flex;
+  gap: 15px;
+  margin-left: auto;
+}
+
+/* Style for the buttons */
+.nav-button {
+  font-size: 20px;
+  color: #ffffff;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-weight: 200;
+  text-transform: uppercase;
+  padding: 5px 10px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Specific style for 'LOGIN | SIGN UP' button */
+.login-signup {
+  color: #000000;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 10px 20px;
+}
+
+/* Full-width image styling */
+.events-image-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.events-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Text overlay on the image */
+.image-text {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  font-size: 96px;
+  font-weight: 900;
+  color: #ffffff;
+  line-height: 1;
+}
+
+/* Countdown box */
+.countdown-box {
+  width: 100%;
+  border: 1px solid #ffffff;
+  margin-top: 0;
+  text-align: center;
+}
+
+/* Center-aligned text inside the countdown box */
+.countdown-text {
+  font-size: 45px;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 20px 0;
+}
+
+/* Countdown timer text */
+.countdown-timer {
+  font-size: 90px;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+/* Upcoming Events Box */
+.upcoming-events-box {
+  width: 100%;
+  border: 1px solid #ffffff;
+  margin-top: 0;
+  text-align: center;
+}
+
+.upcoming-events-text {
+  font-size: 45px;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 20px 0;
+}
+
+/* Container for the row of three boxes */
+.boxes-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0;
+  overflow: hidden;
+}
+
+/* Individual box styling in the row */
+.box {
+  width: 33.33%;
+  border: 1px solid #ffffff;
+  text-align: center;
+  background-color: transparent;
+  margin: 0;
+}
+
+/* Styling for the image inside each box */
+.box img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Text inside each box */
+.box-text {
+  font-size: 27px;
+  font-weight: 200;
+  color: #ffffff;
+  padding: 10px;
+  text-align: left;
+}
+
+/* Past Events Box */
+.past-events-box {
+  width: 100%;
+  border: 1px solid #ffffff;
+  margin-top: 0;
+  text-align: center;
+}
+
+.past-events-text {
+  font-size: 45px;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 20px 0;
+}
