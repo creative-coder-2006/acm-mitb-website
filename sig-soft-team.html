@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MITB ACM Student Chapter</title>
+  <link rel="icon" href="assets/logo.png" type="image/png">
+  <link rel="stylesheet" href="acm-team-style.css">
+</head>
+<body>
+  <div class="header">
+    <img src="assets/logo.png" class="logo" alt="Logo">
+    <div class="audio-container">
+      <button class="audio-button" id="audio-button" onclick="showControls()" aria-label="Audio controls"></button>
+      <button class="control-button pause-button hidden" id="play-pause-button" onclick="togglePause()" aria-label="Pause audio"></button>
+      <button class="control-button restart-button hidden" id="restart-button" onclick="restartAudio()" aria-label="Restart audio"></button>
+    </div>
+    <div class="hamburger" onclick="toggleSidebar()">
+      <img src="assets/hamburger_button.png" alt="Menu">
+    </div>
+    <div class="nav-buttons">
+      <a href="home.html"><button class="nav-button home">HOME</button></a>
+      <a href="about-us.html"><button class="nav-button about-us">ABOUT US</button></a>
+      <div class="dropdown">
+        <button class="nav-button events">EVENTS</button>
+        <div class="dropdown-content">
+          <a href="events.html">ALL</a>
+          <a href="acm-main-events.html">ACM-MAIN</a>
+          <a href="acm-w-events.html">ACM-W</a>
+          <a href="sig-ai-events.html">SIG-AI</a>
+          <a href="sig-soft-events.html">SIG-SOFT</a>
+        </div>
+      </div>
+      <a href="constituents.html"><button class="nav-button constituents">CONSTITUENTS</button></a>
+      <a href="join-us.html"><button class="nav-button join-us">JOIN US</button></a>
+      <div class="dropdown">
+        <button class="nav-button team">TEAM</button>
+        <div class="dropdown-content">
+          <a href="acm-main-team.html">ACM-MAIN</a>
+          <a href="acm-w-team.html">ACM-W</a>
+          <a href="sig-ai-team.html">SIG-AI</a>
+          <a href="sig-soft-team.html">SIG-SOFT</a>
+        </div>
+      </div>
+      <a href="contact-us.html"><button class="nav-button contact-us">CONTACT US</button></a>
+      <a href="login-signup.html"><button class="nav-button login-signup">LOGIN | SIGN UP</button></a>
+    </div>
+  </div>
+
+  <div class="content-wrapper">
+    <div class="title-box">TEAM</div>
+  </div>
+  <div class="carousel-container">
+    <button class="carousel-button" id="prev-button">
+      <img src="assets/backward.png" alt="Previous">
+    </button>
+    <div class="carousel">
+      <div class="team-member-box">
+        <img src="assets/Dr_Shreyas_J.jpg" alt="Dr. Shreyas J">
+        <div class="member-name">Dr. Shreyas J</div>
+        <div class="member-role">Faculty Sponsor</div>
+        <div class="social-buttons">
+          <a href="https://www.linkedin.com" target="_blank">
+            <img src="assets/linkedin.png" alt="LinkedIn" class="social-icon">
+          </a>
+          <a href="https://www.instagram.com" target="_blank">
+            <img src="assets/instagram.png" alt="Instagram" class="social-icon">
+          </a>
+        </div>
+      </div>
+      <div class="team-member-box">
+        <img src="assets/Samyak_Bargale.jpg" alt="Samyak Bargale">
+        <div class="member-name">Samyak Bargale</div>
+        <div class="member-role">Chair</div>
+        <div class="social-buttons">
+          <a href="https://www.linkedin.com" target="_blank">
+            <img src="assets/linkedin.png" alt="LinkedIn" class="social-icon">
+          </a>
+          <a href="https://www.instagram.com" target="_blank">
+            <img src="assets/instagram.png" alt="Instagram" class="social-icon">
+          </a>
+        </div>
+      </div>
+      <div class="team-member-box">
+        <img src="assets/Somyajeet_Arukh.jpg" alt="Somyajeet Arukh">
+        <div class="member-name">Somyajeet Arukh</div>
+        <div class="member-role">Vice Chair</div>
+        <div class="social-buttons">
+          <a href="https://www.linkedin.com" target="_blank">
+            <img src="assets/linkedin.png" alt="LinkedIn" class="social-icon">
+          </a>
+          <a href="https://www.instagram.com" target="_blank">
+            <img src="assets/instagram.png" alt="Instagram" class="social-icon">
+          </a>
+        </div>
+      </div>
+      <div class="team-member-box">
+        <img src="assets/Trideb_Jena.jpg" alt="Trideb Jena">
+        <div class="member-name">Trideb Jena</div>
+        <div class="member-role">General Secretary</div>
+        <div class="social-buttons">
+          <a href="https://www.linkedin.com" target="_blank">
+            <img src="assets/linkedin.png" alt="LinkedIn" class="social-icon">
+          </a>
+          <a href="https://www.instagram.com" target="_blank">
+            <img src="assets/instagram.png" alt="Instagram" class="social-icon">
+          </a>
+        </div>
+      </div>
+      <div class="team-member-box">
+        <img src="assets/Isaac_Dsouza.jpg" alt="Isaac Dsouza">
+        <div class="member-name">Isaac D'souza</div>
+        <div class="member-role">Webmaster</div>
+        <div class="social-buttons">
+          <a href="https://www.linkedin.com" target="_blank">
+            <img src="assets/linkedin.png" alt="LinkedIn" class="social-icon">
+          </a>
+          <a href="https://www.instagram.com" target="_blank">
+            <img src="assets/instagram.png" alt="Instagram" class="social-icon">
+          </a>
+        </div>
+      </div>
+      <div class="team-member-box">
+        <img src="assets/Lakshya_Banga.jpg" alt="Lakshya">
+        <div class="member-name">Lakshya Banga</div>
+        <div class="member-role">Executive Member</div>
+        <div class="social-buttons">
+          <a href="https://www.linkedin.com" target="_blank">
+            <img src="assets/linkedin.png" alt="LinkedIn" class="social-icon">
+          </a>
+          <a href="https://www.instagram.com" target="_blank">
+            <img src="assets/instagram.png" alt="Instagram" class="social-icon">
+          </a>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-button" id="next-button">
+      <img src="assets/forward.png" alt="Next">
+    </button>
+  </div>
+
+  <div class="footer">
+    <div class="footer-logo-container">
+      <!-- Logo positioned at the top right -->
+      <img src="assets/acm_mitb_footer_logo.png" alt="Logo" class="footer-logo">
+
+      <!-- Social Media Links placed next to each other -->
+      <div class="footer-social-links">
+        <a href="https://www.linkedin.com/company/mitb-acm-student-chapter/" target="_blank">
+          <img src="assets/linkedin.png" alt="LinkedIn" class="footer-social-icon">
+        </a>
+        <a href="https://www.instagram.com/acm_mitb/" target="_blank">
+          <img src="assets/instagram.png" alt="Instagram" class="footer-social-icon">
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-right">
+      <div class="footer-links">
+        <p class="footer-link"><strong>MENU</strong></p>
+        <a href="home.html" class="footer-link">Home</a>
+        <a href="about-us.html" class="footer-link">About Us</a>
+        <a href="events.html" class="footer-link">Events</a>
+        <a href="constituents.html" class="footer-link">Constituents</a>
+        <a href="join-us.html" class="footer-link">Join Us</a>
+        <a href="acm-main-team.html" class="footer-link">Team</a>
+        <a href="contact-us.html" class="footer-link">Contact Us</a>
+        <a href="login-signup.html" class="footer-link">LOGIN | SIGN UP</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="sidebar" id="sidebar">
+    <a href="home.html"><button class="nav-button home">HOME</button></a>
+    <a href="about-us.html"><button class="nav-button about-us">ABOUT US</button></a>
+    <div class="dropdown">
+      <button class="nav-button events">EVENTS</button>
+      <div class="dropdown-content">
+        <a href="events.html">ALL</a>
+        <a href="acm-main-events.html">ACM-MAIN</a>
+        <a href="acm-w-events.html">ACM-W</a>
+        <a href="sig-ai-events.html">SIG-AI</a>
+        <a href="sig-soft-events.html">SIG-SOFT</a>
+      </div>
+    </div>
+    <a href="constituents.html"><button class="nav-button constituents">CONSTITUENTS</button></a>
+    <a href="join-us.html"><button class="nav-button join-us">JOIN US</button></a>
+    <div class="dropdown">
+      <button class="nav-button team">TEAM</button>
+      <div class="dropdown-content">
+        <a href="acm-main-team.html">ACM-MAIN</a>
+        <a href="acm-w-team.html">ACM-W</a>
+        <a href="sig-ai-team.html">SIG-AI</a>
+        <a href="sig-soft-team.html">SIG-SOFT</a>
+      </div>
+    </div>
+    <a href="contact-us.html"><button class="nav-button contact-us">CONTACT US</button></a>
+    <a href="login-signup.html"><button class="nav-button login-signup">LOGIN | SIGN UP</button></a>
+  </div>
+
+  <script src="sidebar.js"></script>
+  <script src="audio.js"></script>
+  <script src="team-rotation.js"></script>
+</body>
+</html>

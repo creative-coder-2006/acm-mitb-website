@@ -1,0 +1,63 @@
+/* styles.css */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black; /* Black background */
+    font-family: 'Montserrat', sans-serif; /* Montserrat font */
+    color: white; /* White text */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full height */
+    overflow: hidden; /* No scroll */
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    width: 90vw; /* Use 90% of the viewport width */
+    max-width: 1200px; /* Cap width on very large screens */
+    height: 90vh; /* Use 90% of the viewport height */
+    max-height: 800px; /* Cap height on very large screens */
+    justify-content: space-evenly; /* Distribute items evenly */
+}
+
+label {
+    font-size: 2.5vh; /* Scale font size dynamically */
+    margin-bottom: 1vh;
+    text-transform: uppercase;
+}
+
+input, textarea {
+    background: transparent;
+    border: 1px solid white; /* 1px white border */
+    color: white; /* White text */
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5vh; /* Scale font size dynamically */
+    padding: 2vh; /* Adjust padding dynamically */
+    border-radius: 0; /* No corner radius */
+    outline: none;
+    margin-bottom: 2vh; /* Space between fields */
+}
+
+textarea {
+    resize: none; /* Prevent resizing */
+    height: 15vh; /* Scale textarea height dynamically */
+}
+
+button {
+    background: white;
+    color: black;
+    border: 1px solid white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5vh; /* Scale font size dynamically */
+    padding: 2vh; /* Adjust padding dynamically */
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button:hover {
+    background: black;
+    color: white;
+}

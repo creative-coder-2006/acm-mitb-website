@@ -1,0 +1,19 @@
+<div class="contact-form">
+  <form id="contact-form" onsubmit="sendEmail(event)">
+    <div class="form-field">
+      <input type="text" id="name" name="name" placeholder="YOUR NAME" required />
+    </div>
+    <div class="form-field">
+      <input type="tel" id="phone" name="phone" placeholder="YOUR PHONE" required />
+    </div>
+    <div class="form-field">
+      <input type="email" id="email" name="email" placeholder="YOUR EMAIL" required />
+    </div>
+    <div class="form-field">
+      <textarea id="message" name="message" placeholder="YOUR MESSAGE" required></textarea>
+    </div>
+    <div class="form-field">
+      <button type="submit">Send Message</button>
+    </div>
+  </form>
+</div>
