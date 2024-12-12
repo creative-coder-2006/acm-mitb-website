@@ -346,3 +346,24 @@
   <script src="audio.js"></script>
 </body>
 </html>
+
+<script src="https://unpkg.com/scrollreveal"></script>
+<script>
+ScrollReveal({ 
+    reset: false,
+    distance: '80px',
+    duration: 1500,
+    delay:500
+});
+ScrollReveal().reveal('.header', { origin: 'top', distance: '100px', delay: 100 });
+ScrollReveal().reveal('.logo', { origin: 'left', distance: '50px', delay: 200 });
+ScrollReveal().reveal('.nav-buttons', { origin: 'right', distance: '50px', delay: 300 });
+ScrollReveal().reveal('.audio-container', { origin: 'top', distance: '40px', delay: 400 });
+ScrollReveal().reveal('.hamburger', { origin: 'bottom', distance: '30px', delay: 500 });
+
+ScrollReveal().reveal('.mitb-image-container', {origin: 'bottom', easing: 'ease-in-out', scale:0.8});
+ScrollReveal().reveal('.content-container', {origin: 'bottom'});
+ScrollReveal().reveal('.acm-benefits', {origin: 'top'});
+ScrollReveal().reveal('.divider-line, .content-title', {origin: 'left'});
+ScrollReveal().reveal('.content-paragraph', {origin: 'right'});
+</script>

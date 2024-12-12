@@ -154,5 +154,22 @@
 
   <script src="sidebar.js"></script>
   <script src="audio.js"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script>
+    const sr = ScrollReveal({
+      distance: '50px',
+      duration: 1000,
+      easing: 'ease-in-out',
+      opacity: 0,
+      scale: 0.8,
+    });
+
+    sr.reveal('.logo,.audio-button', { delay: 200, origin: 'top' });
+    sr.reveal('.nav-button', { delay: 300, origin: 'left', interval: 100 });
+    sr.reveal('.tutorial-section, .tutorial-image', { delay: 500, origin: 'bottom' });
+    sr.reveal('.tutorial-text,.title-box', { delay: 600, origin: 'top' });
+    sr.reveal('.tutorial-step', { delay: 700, origin: 'bottom', interval: 200 });
+    sr.reveal('.footer', { delay: 1000, origin: 'top' });
+  </script>
 </body>
 </html>
