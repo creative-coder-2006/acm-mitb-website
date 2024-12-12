@@ -130,5 +130,21 @@
 
   <script src="sidebar.js"></script>
   <script src="audio.js"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script>
+    const sr = ScrollReveal({
+      distance: '50px',
+      duration: 1000,
+      easing: 'ease-in-out',
+      opacity: 0,
+      scale: 0.8,
+    });
+
+    sr.reveal('.team-member-box', { delay: 200, origin: 'bottom', interval: 100 });
+    sr.reveal('.logo,.audio-button', { delay: 200, origin: 'top' });
+    sr.reveal('.nav-button', { delay: 300, origin: 'left', interval: 100 });
+    sr.reveal('.constituent-box', { delay: 500, origin: 'bottom', interval: 200 });
+    sr.reveal('.footer,.title-box', { delay: 800, origin: 'top' });
+  </script>
 </body>
 </html>

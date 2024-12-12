@@ -152,5 +152,23 @@
   <script src="sidebar.js"></script>
   <script src="audio.js"></script>
   <script src="countdown-events-sig-ai.js"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script>
+    const sr = ScrollReveal({
+      distance: '50px',
+      duration: 1000,
+      easing: 'ease-in-out',
+      opacity: 0,
+      scale: 0.8,
+    });
+
+    sr.reveal('.logo', { delay: 200, origin: 'top' });
+    sr.reveal('.nav-button', { delay: 300, origin: 'left', interval: 100 });
+    sr.reveal('.events-image-container', { delay: 500, origin: 'bottom' });
+    sr.reveal('.countdown-box', { delay: 600, origin: 'right' });
+    sr.reveal('.upcoming-events-box', { delay: 700, origin: 'top' });
+    sr.reveal('.boxes-container .box', { delay: 800, origin: 'bottom', interval: 200 });
+    sr.reveal('.footer', { delay: 1000, origin: 'top' });
+  </script>
 </body>
 </html>
